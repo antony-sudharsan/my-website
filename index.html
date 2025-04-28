@@ -8,6 +8,16 @@
     <body>
         <h1> hello ...Welcome to my wonderful website</h1>
         <p>You will never find another place as cool as this</p>
-        <p><img src="img/bridge.jpg" alt="A nice picture of The Bridge"/></p>
+       <div class="container" id="grid"></div>
+
+<script>
+  const imageContainer = document.getElementById('grid'); 
+  for (let i = 1; i <= 100; i++) {
+    const img = document.createElement('img');
+    img.src = `bridge (${i}).jpg`;
+    img.alt = `Bridge ${i}`;
+    imageContainer.appendChild(img);
+  }
+</script>
     </body>
 </html>
